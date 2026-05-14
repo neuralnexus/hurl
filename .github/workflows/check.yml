@@ -24,4 +24,4 @@ jobs:
     - name: Check XML/HTML files
       run: bin/check/xmllint.sh
     - name: Run crates update
-      run: bin/check/crates.sh 
+      run: bin/check/crates.sh \n
