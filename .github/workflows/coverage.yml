@@ -49,4 +49,4 @@ jobs:
         name: coverage
         path: |
           coverage
-          *.profraw\n
+          *.profraw
