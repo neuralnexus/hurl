@@ -293,4 +293,4 @@ jobs:
         name: tests-win64-${{ matrix.rust }}-artifacts
         path: |
           integration/server.log
-          integration/server-ssl.log\n
+          integration/server-ssl.log
