@@ -184,4 +184,4 @@ jobs:
                 echo "  - ${comment}"
                 #gh pr comment "${PR_NUMBER}" --body "${comment} Please refer to ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID} logs."
                 #exit 1       
-            fi
+            fi\n
