@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Environment
         run: bin/environment.sh
       - name: Install Prerequisites
@@ -36,7 +36,7 @@ jobs:
         rust: [stable]
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Environment
       run: bin/environment.sh
     - name: Install Prerequisites
@@ -69,7 +69,7 @@ jobs:
         rust: [stable]
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Install Python 3.8
         uses: actions/setup-python@v4
         with:
@@ -113,7 +113,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3    
+      uses: actions/checkout@v4    
     - name: Build, Test units and Integration tests
       uses: addnab/docker-run-action@v3
       with:
@@ -139,7 +139,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3    
+      uses: actions/checkout@v4    
     - name: Build, Test units and Integration tests
       uses: addnab/docker-run-action@v3
       with:
@@ -165,7 +165,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3    
+      uses: actions/checkout@v4    
     - name: Build, Test units and Integration tests
       uses: addnab/docker-run-action@v3
       with:
@@ -194,7 +194,7 @@ jobs:
         rust: [stable]
     steps:
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - name: Environment
       run: bin/environment.sh
     - name: Install Rust
@@ -229,7 +229,7 @@ jobs:
         git config --global core.autocrlf false
         git config --global core.eol lf       
     - name: Checkout repository
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
     - uses: actions/cache@v3
       with:
         path: |
@@ -294,4 +294,3 @@ jobs:
         path: |
           integration/server.log
           integration/server-ssl.log
-
