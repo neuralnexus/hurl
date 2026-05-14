@@ -123,4 +123,4 @@ jobs:
             else
                 echo "  - ❌ A problem occurs when attempting to add labels into new pull request n°${NEW_PR_NUMBER}."
                 exit 1
-            fi
+            fi\n
