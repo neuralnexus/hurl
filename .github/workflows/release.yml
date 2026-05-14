@@ -116,4 +116,4 @@ jobs:
         name: release-windows-x64-artifacts
         path: |
           .\target\win-package\hurl-*-installer.exe
-          .\target\win-package\hurl-*-win64.zip\n
+          .\target\win-package\hurl-*-win64.zip
