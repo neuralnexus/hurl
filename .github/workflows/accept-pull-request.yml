@@ -45,7 +45,7 @@ jobs:
             echo "NEW_COMMITS_FILE=new_commits.txt" | tee -a "${GITHUB_ENV}"
 
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: ${{ env.BASE_REF }}
           fetch-depth: 0
